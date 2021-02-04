@@ -15,9 +15,9 @@
         <nav>
            <!-- *** Botones para la conección con el formulario.*** -->
             <ul>
-                <li><button>📷Imágen</button></li>
-                <li><button>🅰Texto</button></li>
-                <li><button>💡Modo oscuro</button></li>
+                <li><button class="image">📷Imágen</button></li>
+                <li><button class="text">🅰Texto</button></li>
+                <li><button class="dark">💡Modo oscuro</button></li>
             </ul>
         </nav>
         <main>
@@ -89,6 +89,7 @@
                     </div>
                     </div>
                     <div>
+                        <!-- ***Color del contorno del texto a ingresar*** -->
                         <input type="checkbox" id="transparente">
                         <label for="transparente">Fondo Transparente</label>
                     </div>
@@ -101,10 +102,12 @@
                         </div>
                     </div>
                     <div>
+                       <!--  ***Espaciado del lugar que abarca el Top Text y el Bottom Text*** -->
                         <label for="espaciado">ESPACIADO</label>
                         <input type="number" id="espaciado" class="space">
                     </div>
                     <div>
+                        <!-- ***Interlineado del espacio de ambos botones del texto*** -->
                         <label for="interlineado">INTERLINEADO</label>
                         <select name="interlineado" id="interlineado" class="inter">
                         <option value="0.8">0.8</option>
