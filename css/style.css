@@ -1,0 +1,111 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*Header y nav, título y botones accesibles*/
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 0.625rem;
+    width: 80%;
+}
+nav, ul, li{
+    display: flex;
+    flex-direction:row;
+    justify-content: center;
+    padding: 0.625rem;
+    width: 60%;
+    padding-left: 13%;
+}
+button{
+    padding:4px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 45vh;
+    height: 5vh;
+
+}
+/*Main que abarca el texto, la imágen y el botón de texto. Más el botón de descarga*/
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 80%;
+    padding-bottom: 8.75rem;
+    background-color: coral;
+}
+.meme{
+    height: auto;
+    width: 40%;
+    background-color: cyan  ;
+    text-align: center;
+    font-size: 2.1875rem;
+    font-weight: bold;
+}
+.top-text, .bottom-text{
+    height: auto;
+    width: 100%;
+    padding: 5%;
+}
+.image-center{
+    height: auto;
+    width: 100%;
+    padding: 30%;
+    background-color: black;
+}
+.effects{
+    width: 20%;
+    height: 125vh;
+    background-color: chocolate;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-left: 100%;
+    overflow: auto; 
+    position: fixed;
+    z-index: 0;
+}
+
+.dowland{
+    display: flex;
+    flex-direction: column;
+    padding-top: 60%;
+    margin-left:-22.5rem;
+    padding-bottom: 13%;
+}
+.get-it{
+    padding:4px;
+    margin: 20px; 
+    font-size: 20px;
+    background-color: green;
+    color: white;
+    height: 30%;
+}
+/* Estilos del formulario */
+.left, .center, .right{
+    width: 40px;
+}
+.aligned{
+    display: flex;
+    justify-content: space-between;
+}
+.colours{
+    display: flex;
+}
+.outline{
+    display: flex;
+}
+.space{
+    display: flex;
+    width: 100%;
+}
+.inter{
+    display: flex;
+    width: 100%;
+}
+

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Editor de memes.</title>
+</head>
+<body>
+    <!--**** Presentación del editor*** -->
+    <header>
+        <h1>Generador de Memes</h1>
+    </header>
+        <nav>
+           <!-- *** Botones para la conección con el formulario.*** -->
+            <ul>
+                <li><button>📷Imágen</button></li>
+                <li><button>🅰Texto</button></li>
+                <li><button>💡Modo oscuro</button></li>
+            </ul>
+        </nav>
+        <main>
+            <!-- ***Main al que la da la funcionalidad al texto, imágen, botón , formulario y descarga*** -->
+            <section class="meme">
+                <article id="writting" class="top-text">TOP TEXT</article>
+                <article class="image-center"></article>
+                <article class="bottom-text">BOTTOM TEXT</article>
+            </section>
+                <article class="dowland">
+                <button class="get-it"><i class="fas fa-download"></i>&nbsp&nbspDescargar meme</button>
+                </article>
+            
+            <aside class="effects">
+                <form action="">
+                    <h2>TEXTO</h2>
+                    <div>
+                        <label for="up">SUPERIOR</label>
+                        <input type="text" id="up" value="TOP TEXT">
+                    </div>
+                    <div>
+                        <input type="checkbox" name="" id="top-check">
+                        <label for="top-check">Sin texto superior</label>
+                       
+                    </div>
+                    <div>
+                        <label for="bottom">INFERIOR</label>
+                        <input type="text" id="bottom" value="BOTTOM TEXT">
+                    </div>
+                    <div>
+                        <input type="checkbox" name="" id="top-check">
+                        <label for="top-check">Sin texto inferior</label>
+                       
+                    </div>
+                    <div>
+                        <!-- ***Aquí comienza el selector de fuentes*** -->
+                        <label for="letter">FUENTE</label>
+                        <select name="letter" id="letter">
+                            <option value="arial">Arial</option>
+                            <option value="arial-black">Arial Black</option>
+                            <option value="american-typewriter">American Typewriter</option>
+                            <option value="andale-mono">Andale Mono</option>
+                            <option value="comic-sans-ms">Comic Sans MS</option>
+                            <option value="helvetica">Helvética</option>
+                            <option value="impact">Impact</option>
+                            <option value="verdana">Verdana</option>
+                            <option value="times-new-roman">Times New Roman</option>
+                        </select>
+                        
+                    </div>
+                    <div class="aligned">
+                        <input type="number" value="40">
+                        <button class="left"><i class="fas fa-align-left"></i></button>
+                        <button class="center"><i class="fas fa-align-center"></i></button>
+                        <button class="right"><i class="fas fa-align-right"></i></button>
+                    </div>
+
+                    <!-- ***Color del texto ingresado y fondo del mismo*** -->
+                    <div class="colours">
+                    <div>
+                        <label for="color">Color</label>
+                        <input type="color" id="color" value="#000000">
+                        <span>#000000</span>
+                    </div>
+                    <div>
+                        <label for="fondo">Fondo</label>
+                        <input type="color" id="fondo" value="#FFFFFF">
+                        <span>#FFFFFF</span>
+                    </div>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="transparente">
+                        <label for="transparente">Fondo Transparente</label>
+                    </div>
+                    <div>
+                        <label for="">CONTORNO</label>
+                        <div class="outline">
+                        <button>Ninguno</button>
+                        <button>Claro</button>
+                        <button>Oscuro</button>
+                        </div>
+                    </div>
+                    <div>
+                        <label for="espaciado">ESPACIADO</label>
+                        <input type="number" id="espaciado" class="space">
+                    </div>
+                    <div>
+                        <label for="interlineado">INTERLINEADO</label>
+                        <select name="interlineado" id="interlineado" class="inter">
+                        <option value="0.8">0.8</option>
+                        <option value="1">1</option>
+                        <option value="1.2">1.2</option>
+                        <option value="1.5">1.5</option>
+                        <option value="2">2</option>
+                        <option value="2.5">2.5</option>
+                        </select>
+                    </div>
+                    
+                    
+                </form>
+
+            </aside>
+        
+            
+        </main>
+        
+ 
+    
+
+
+
+    <script src="./js/app.js"></script>
+</body>
+</html>
