@@ -1,0 +1,39 @@
+/* **Aquí se encuentran los estilos del formulario de la imágen** */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --darkColor:#401366;
+}
+
+.behind{
+    display: flex;
+    justify-content: space-between;
+}
+
+.photo, .filter{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: cyan;
+}
+
+.photo, .behind, .filtros{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+}
+
+.button-reload{
+    padding:0.25rem;
+    margin: 0.3125rem; 
+    font-size: 1.25rem;
+    background-color: green;
+    color: white;
+    height:auto;
+    width: 90%;
+    margin-left: 0.9375rem;
+    margin-top: 0.9375rem;
+} 
