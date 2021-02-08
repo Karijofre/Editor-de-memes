@@ -61,7 +61,7 @@ main{
     font-size: 2.1875rem;
     font-weight: bold;
 }
-.top-text, .bottom-text{
+.top-text, .bottom{
     height: auto;
     width: 100%;
     padding: 5%;
@@ -129,3 +129,37 @@ main{
     width: 100%;
 }
 
+
+/* Clase funcional para add y remove del js: */
+.ocultar{
+    visibility: hidden;
+}
+
+
+
+/* Estilos de letra del input Fuente. */
+
+.arial{
+    font-family: Arial;
+}
+.arial-black{
+    font-family:'Arial Narrow Bold';
+}
+.monospace{
+    font-family: monospace;
+}
+.curier-new{
+    font-family: 'Courier New';
+}
+.helvetica{
+    font-family: Helvetica;
+}
+.impact{
+    font-family: Impact;
+}
+.verdana{
+    font-family: Verdana;
+}
+.times-new-roman{
+    font-family:'Times New Roman';
+}

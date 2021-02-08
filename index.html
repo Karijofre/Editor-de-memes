@@ -16,9 +16,9 @@
         <nav>
            <!-- *** Botones para la conección con el formulario.*** -->
             <ul>
-                <li><button class="doing">📷Imágen</button></li>
-                <li><button class="doing">🅰Texto</button></li>
-                <li><button class="doing">💡Modo oscuro</button></li>
+                <li><button id="image-press" class="doing">📷Imágen</button></li>
+                <li><button id="text-press" class="doing">🅰Texto</button></li>
+                <li><button id="dark-press" class="doing">💡Modo oscuro</button></li>
             </ul>
         </nav>
         <main>
@@ -26,7 +26,7 @@
             <section class="meme">
                 <article id="top-text" class="top-text">TOP TEXT</article>
                 <article class="image-center"></article>
-                <article class="bottom-text">BOTTOM TEXT</article>
+                <article id="bottom-end" class="bottom">BOTTOM TEXT</article>
             </section>
                 <article class="dowland">
                 <button class="get-it"><i class="fas fa-download"></i>&nbsp&nbspDescargar meme</button>
@@ -34,9 +34,9 @@
             
             <aside id="effects" class="effects">
                <!--  ***Comienza la caja contenedora del formulario de TEXTO*** -->
-                <div class="container-text">
-                <form id="text-mode" class="text-mode" hidden style="display: none;">
-                    <h2>TEXTO</h2>
+                <div id="container-text" class="container-text">
+                <form id="text-mode" class="text-mode"  style="display: block" >
+                    <h2>TEXTO&nbsp🅰</h2>
                     <div>
                         <label for="up">SUPERIOR</label>
                         <input type="text" id="up" value="TOP TEXT">
@@ -47,27 +47,27 @@
                        
                     </div>
                     <div>
-                        <label for="bottom">INFERIOR</label>
-                        <input type="text" id="bottom" value="BOTTOM TEXT">
+                        <label for="bottom-text">INFERIOR</label>
+                        <input type="text" id="bottom-text" value="BOTTOM TEXT">
                     </div>
                     <div>
-                        <input type="checkbox" name="" id="top-check">
-                        <label for="top-check">Sin texto inferior</label>
+                        <input type="checkbox" name="" id="down-check">
+                        <label for="down-check">Sin texto inferior</label>
                        
                     </div>
                     <div>
                         <!-- ***Aquí comienza el selector de fuentes*** -->
                         <label for="letter">FUENTE</label>
                         <select name="letter" id="letter">
-                            <option value="arial">Arial</option>
-                            <option value="arial-black">Arial Black</option>
-                            <option value="american-typewriter">American Typewriter</option>
-                            <option value="andale-mono">Andale Mono</option>
-                            <option value="comic-sans-ms">Comic Sans MS</option>
-                            <option value="helvetica">Helvética</option>
-                            <option value="impact">Impact</option>
-                            <option value="verdana">Verdana</option>
-                            <option value="times-new-roman">Times New Roman</option>
+                            <option class="arial" value="arial">Arial</option>
+                            <option class="arial-black" value="Arial Narrow Bold">Arial Black</option>
+                            <option class="american-typewriter" value="american-typewriter">American Typewriter</option>
+                            <option class="monospace" value="monospace">Monospace</option>
+                            <option class="courier-new" value="Courier New">Courier New</option>
+                            <option class="helvetica" value="helvetica">Helvética</option>
+                            <option class="impact" value="impact">Impact</option>
+                            <option class="verdana" value="verdana">Verdana</option>
+                            <option class="times-new-roman" value="times-new-roman">Times New Roman</option>
                         </select>
                         
                     </div>
@@ -123,13 +123,13 @@
                 </form>
                 </div>
                 <!-- ***Comienza la caja contenedora del formulario de IMÁGEN*** -->
-                <div class="container-image">
-                    <form id="image-mode" class="image-mode" style="display: block;">
-                        <h2>IMAGEN</h2>
+                <div id="container-image" class="container-image">
+                    <form id="image-mode" class="image-mode" hidden>  
+                        <h2>IMAGEN&nbsp📷</h2>
                         <div class="photo">
                            <!--  **Ingreso de la url de la imágen elegida por el usuario** -->
-                            <label for="url">URL</label>
-                            <input type="url" id="image-url" class="image-input">
+                            <label for="linkeado">URL</label>
+                            <input type="url" id="linkeado" class="image">
                             
                         </div>
                         <!-- **Color de fondo de la imágen y selector funcional** -->
@@ -204,5 +204,6 @@
 
 
     <script src="./js/app.js"></script>
+    <script src="./js/main.js"></script>
 </body>
 </html>
