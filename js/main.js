@@ -118,6 +118,10 @@ size.addEventListener("keyup", ()=>{
     topText.style.fontSize = `${size.value}px`;
     bottomEnd.style.fontSize = `${size.value}px`;
 })
+size.addEventListener("click", ()=>{
+    topText.style.fontSize = `${size.value}px`;
+    bottomEnd.style.fontSize = `${size.value}px`;
+})
 
 
 
