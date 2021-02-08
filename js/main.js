@@ -20,10 +20,12 @@ const textPress = document.getElementById("text-press");
 const containerText = document.getElementById("container-text");
 
 const imagePress = document.getElementById("image-press");
- const containerImage = document.getElementById("container-image"); 
- const imageMode = document.getElementById("image-mode");
- const textMode = document.getElementById("text-mode");
- const letter = document.getElementById("letter");
+const containerImage = document.getElementById("container-image"); 
+const imageMode = document.getElementById("image-mode");
+const textMode = document.getElementById("text-mode");
+const letter = document.getElementById("letter");
+
+const size = document.getElementById("size");
  
 
 
@@ -107,6 +109,18 @@ letter.addEventListener("change", ()=>{
     topText.style.fontFamily = `${letter.value}`;
     bottomEnd.style.fontFamily = `${letter.value}`;
 })
+
+
+
+/* Evento tamaño de letra: */
+
+size.addEventListener("keyup", ()=>{
+    topText.style.fontSize = `${size.value}px`;
+    bottomEnd.style.fontSize = `${size.value}px`;
+})
+
+
+
 
 
 
