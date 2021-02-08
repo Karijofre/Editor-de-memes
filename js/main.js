@@ -26,6 +26,10 @@ const textMode = document.getElementById("text-mode");
 const letter = document.getElementById("letter");
 
 const size = document.getElementById("size");
+
+const leftButtom = document.getElementById("left-buttom");
+const centerBottom = document.getElementById("center-bottom");
+const rightBottom = document.getElementById("right-bottom");
  
 
 
@@ -122,6 +126,31 @@ size.addEventListener("click", ()=>{
     topText.style.fontSize = `${size.value}px`;
     bottomEnd.style.fontSize = `${size.value}px`;
 })
+
+
+
+/* Evento a los botones de izquierda, centro y derecha. */
+
+leftButtom.addEventListener("click", (e)=>{
+    e.preventDefault();
+    topText.style.textAlign = "left";
+    bottomEnd.style.textAlign = "left";
+})
+
+centerBottom.addEventListener("click", (e)=>{
+    e.preventDefault();
+    topText.style.textAlign = "center";
+    bottomEnd.style.textAlign = "center";
+})
+
+rightBottom.addEventListener("click", (e)=>{
+    e.preventDefault();
+    topText.style.textAlign = "right";
+    bottomEnd.style.textAlign = "right";
+})
+
+
+
 
 
 
