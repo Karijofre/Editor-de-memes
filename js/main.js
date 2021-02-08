@@ -77,7 +77,7 @@ downCheck.addEventListener("click",()=>{
 
 
 //No funciona de forma correcta aún:
-imagePress.addEventListener("click",()=>{
+ imagePress.addEventListener("click",()=>{
     imageMode.style.display = "block";
     textMode.style.display = "none";
 })
@@ -86,14 +86,26 @@ textPress.addEventListener("click",()=>{
     alert("funciona");
     textMode.style.display = "block";
     imageMode.style.display = "none";
-})
+}) 
+
+
+/* 
+No funciona:  :( */
+/* textPress.addEventListener("click",()=>{
+    if(textPress.click){
+        containerImage.classList.add("ocultar");
+    }else{
+        containerImage.classList.remove("ocultar");
+    }
+}) */
 
 
 
 //Eventos para cambiar la fuente de letra de cada opción:
 
-letter.addEventListener("change",()=>{
-    up.style.fontFamily = `{letter.value}`;
+letter.addEventListener("change", ()=>{
+    topText.style.fontFamily = `${letter.value}`;
+    bottomEnd.style.fontFamily = `${letter.value}`;
 })
 
 
