@@ -171,3 +171,21 @@ rightBottom.addEventListener("click", (e)=>{
     topText.style.backgroundColor = backgroundColor;
     bottomEnd.style.backgroundColor = backgroundColor;
   })
+
+
+
+//Fondo transparente
+
+transparente.addEventListener('click', (e) => {
+    console.log(e.target.checked);
+    if(e.target.checked){
+      topText.style.backgroundColor = 'rgba(0,0,0,.9)';
+      bottomEnd.style.backgroundColor = 'rgba(0,0,0,.9)';  
+    }else{
+        topText.style.backgroundColor = "cyan";
+        bottomEnd.style.backgroundColor = "cyan";
+    }
+  })
+  
+
+  
