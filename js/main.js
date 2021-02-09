@@ -30,6 +30,8 @@ const size = document.getElementById("size");
 const leftButtom = document.getElementById("left-buttom");
 const centerBottom = document.getElementById("center-bottom");
 const rightBottom = document.getElementById("right-bottom");
+
+const darkPress = document.getElementById("dark-press");
  
 
 
@@ -148,6 +150,32 @@ rightBottom.addEventListener("click", (e)=>{
     topText.style.textAlign = "right";
     bottomEnd.style.textAlign = "right";
 })
+
+
+
+
+//Color de letra y de fondo.
+
+/* color.addEventListener('input', (e) =>{
+    const textColor = e.target.value;
+    primerTexto.style.color = textColor;
+    segundoTexto.style.color = textColor;
+    colorText.innerHTML = textColor.toUpperCase();
+  })
+  
+  fondo.addEventListener('input', (e) =>{
+    const backgrondColor = e.target.value;
+    primerTexto.style.backgroundColor = backgrondColor;
+    segundoTexto.style.backgroundColor = backgrondColor;
+    backColor.innerHTML = backgrondColor.toUpperCase();
+  })
+  
+  transparente.addEventListener('click', (e) => {
+    console.log(e.target.checked);
+    if(e.target.checked){
+      primerTexto.style.backgroundColor = 'rgba(0,0,0,.9)'; */
+
+
 
 
 
