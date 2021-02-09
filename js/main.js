@@ -42,6 +42,10 @@ const none = document.getElementById("none");
 const light = document.getElementById("light");
 const blackened = document.getElementById("blackened");
 
+const espaciado = document.getElementById("espaciado");
+
+const interlineado = document.getElementById("interlineado");
+
 
 
 
@@ -213,6 +217,32 @@ transparente.addEventListener('click', (e) => {
     topText.style.webkitTextStroke = 'transparent';
     bottomEnd.style.webkitTextStroke = 'transparent';
   });
+
+
+
+//Espaciado de texto
+
+espaciado.addEventListener('input', (e) =>{
+    let spacing = e.target.value;
+    topText.style.letterSpacing = `${spacing}px`;
+    bottomEnd.style.letterSpacing = `${spacing}px`;
+    
+});
+
+  
+ // Evento interlineado
+
+interlineado.addEventListener('change', (e) =>{
+    let lineValue = e.target.value;
+    topText.style.lineHeight = lineValue;
+    bottomEnd.style.lineHeight = lineValue;
+});
+
+//****FIN DE EVENTOS DE FORMULARIO DE TEXTO****
+
+
+
+
 
 
 
