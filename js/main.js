@@ -32,7 +32,11 @@ const centerBottom = document.getElementById("center-bottom");
 const rightBottom = document.getElementById("right-bottom");
 
 const darkPress = document.getElementById("dark-press");
- 
+
+const color = document.getElementById("color");
+const fondo = document.getElementById("fondo");
+const colorWord = document.getElementById("color-word");
+const colorBack = document.getElementById("color-back");
 
 
 
@@ -156,36 +160,14 @@ rightBottom.addEventListener("click", (e)=>{
 
 //Color de letra y de fondo.
 
-/* color.addEventListener('input', (e) =>{
+ color.addEventListener('input', (e) =>{
     const textColor = e.target.value;
-    primerTexto.style.color = textColor;
-    segundoTexto.style.color = textColor;
-    colorText.innerHTML = textColor.toUpperCase();
+    topText.style.color = textColor;
+    bottomEnd.style.color = textColor;
   })
   
   fondo.addEventListener('input', (e) =>{
-    const backgrondColor = e.target.value;
-    primerTexto.style.backgroundColor = backgrondColor;
-    segundoTexto.style.backgroundColor = backgrondColor;
-    backColor.innerHTML = backgrondColor.toUpperCase();
+    const backgroundColor = e.target.value;
+    topText.style.backgroundColor = backgroundColor;
+    bottomEnd.style.backgroundColor = backgroundColor;
   })
-  
-  transparente.addEventListener('click', (e) => {
-    console.log(e.target.checked);
-    if(e.target.checked){
-      primerTexto.style.backgroundColor = 'rgba(0,0,0,.9)'; */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-//FUNCIONES
