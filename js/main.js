@@ -38,6 +38,10 @@ const fondo = document.getElementById("fondo");
 const colorWord = document.getElementById("color-word");
 const colorBack = document.getElementById("color-back");
 
+const none = document.getElementById("none");
+const light = document.getElementById("light");
+const blackened = document.getElementById("blackened");
+
 
 
 
@@ -186,6 +190,30 @@ transparente.addEventListener('click', (e) => {
         bottomEnd.style.backgroundColor = "cyan";
     }
   })
+
+
+
+//Contorno de la letra
+
+
+ light.addEventListener('click', (event) => {
+    event.preventDefault();
+    topText.style.webkitTextStroke = '1px white';
+    bottomEnd.style.webkitTextStroke = '1px white';
+  });
   
+  blackened.addEventListener('click', (event) => {
+    event.preventDefault();
+    topText.style.webkitTextStroke = '2px black';
+    bottomEnd.style.webkitTextStroke = '2px black';
+  });
+  
+  none.addEventListener('click', (event) => {
+    event.preventDefault();
+    topText.style.webkitTextStroke = 'transparent';
+    bottomEnd.style.webkitTextStroke = 'transparent';
+  });
+
+
 
   
