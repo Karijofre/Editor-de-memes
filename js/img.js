@@ -95,16 +95,24 @@ reloadButton.addEventListener("click", ()=>{
 
 //Botón de descarga
 
-descarga.addEventListener("click", ()=>{
+/* descarga.addEventListener("click", ()=>{
   descargarImagen()
 })
 
 const descargarImagen = () =>{
   domtoimage.toBlob(meme)
     .then(function (blob){
-      saveAs(blob, "my-node.png");
+      saveAs(blob, "my-meme.png");
     });
-}
+} */
+
+descarga.addEventListener("click", ()=>{
+  domtoimage.toBlob(meme)
+  .then(function (blob) {
+    window.saveAs(blob, "my-meme.png");
+  });
+});
+
 
 
 
