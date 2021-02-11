@@ -47,12 +47,26 @@ button{
     align-items: center;
     width: 45vh;
     height: 5vh;
+    cursor: pointer;
 }
 
-.doing{
+
+
+ .doing{
     width: 6.5rem; 
     height: 2.5rem; 
-}
+} 
+
+/* Probando el close X */
+/* .close{
+    width: 10%;
+    display: flex;
+    background-color: var(--azulClaro);
+    color: cyan;
+    margin-left: 90%;
+    border: 2px solid cyan;
+    border-radius: 10px;
+} */
 
 /*Main que abarca el texto, la imágen y el botón de texto. Más el botón de descarga*/
 main{
@@ -86,7 +100,7 @@ main{
 }
 .effects{
     width: 20%;
-    height: 125vh;
+    height: 128vh;
     background-color: chocolate;
     display: flex;
     flex-direction: column;
@@ -118,6 +132,18 @@ main{
 .get-it :hover{
     background-color: var(--azulClaro);
 }
+
+.container-image{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.container-text{
+    visibility: hidden;
+}
+
+
 /* Estilos del formulario */
 .left, .center, .right{
     width: 2.5rem;

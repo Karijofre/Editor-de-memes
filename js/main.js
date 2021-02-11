@@ -83,43 +83,52 @@ downCheck.addEventListener("click",()=>{
         bottomEnd.style.display ="block";
     }
 })
-//Probando las pestañas del menú Texto e Imágen:
-/* imagePress.addEventListener("click",(e)=>{
-    e.preventDefault();
+//Probando las pestañas del menú Texto e Imágen: NO FUNCIONA.
+
+imagePress.addEventListener("click", ()=>{
     containerText.style.display ="none";
-    containerImage.style.display ="flex";
-}) */
-/* textPress.addEventListener("click",(e)=>{
-    e.preventDefault();
+    containerImage.style.display ="block";
+}) 
+
+textPress.addEventListener("click", ()=>{
     containerImage.style.display ="none";
-    containerText.style.display ="flex";
-}) */
+    containerText.style.display ="block";
+})  
 
 
-//No funciona de forma correcta aún:
- imagePress.addEventListener("click",()=>{
-    imageMode.style.display = "block";
-    textMode.style.display = "none";
+//No funciona:
+/*  imagePress.addEventListener("click",()=>{
+    containerImage.style.display = "flex";
+    containerText.style.display = "none";
 })
 
 textPress.addEventListener("click",()=>{
-    alert("funciona");
-    textMode.style.display = "block";
-    imageMode.style.display = "none";
-}) 
+    containerText.style.display = "flex";
+    containerImage.style.display = "none";
+})  */
 
 
 /* 
 No funciona:  :( */
-/* textPress.addEventListener("click",()=>{
-    if(textPress.click){
+/*  textPress.addEventListener("click",(e)=>{
+    if(e.textPress){
         containerImage.classList.add("ocultar");
     }else{
         containerImage.classList.remove("ocultar");
     }
-}) */
+})  */
 
 
+textPress.addEventListener('click', (e) =>{
+    e.preventDefault();
+    containerImage.style.visibility = 'hidden';
+    containerText.style.visibility = 'visible';
+})
+imagePress.addEventListener('click', (e) =>{
+    e.preventDefault();
+    containerText.style.visibility = 'hidden';
+    containerImage.style.display = 'visible';
+})
 
 //Eventos para cambiar la fuente de letra de cada opción:
 

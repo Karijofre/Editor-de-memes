@@ -17,15 +17,18 @@
            <!-- *** Botones para la conección con el formulario.*** -->
             <ul>
                 <li><button id="image-press" class="doing">📷Imágen</button></li>
+
                 <li><button id="text-press" class="doing">🅰Texto</button></li>
-               <li><button id="dark-press" class="doing">💡Modo oscuro</button></li>
+
+                <li><button id="dark-press" class="doing">💡Modo oscuro</button></li>
+
             </ul>
         </nav>
         <main>
             <!-- ***Main al que la da la funcionalidad al texto, imágen, botón , formulario y descarga*** -->
             <section class="meme">
                 <article id="top-text" class="top-text">TOP TEXT</article>
-                <article class="image-center" id="meme" aria-label="Pegue aquí la url seleccionada"></article>
+                <article class="image-center" id="meme"></article>
                 <article id="bottom-end" class="bottom">BOTTOM TEXT</article>
             </section>
                 <article class="dowland">
@@ -34,8 +37,9 @@
             
             <aside id="effects" class="effects">
                <!--  ***Comienza la caja contenedora del formulario de TEXTO*** -->
-                <div id="container-text" class="container-text">
-                <form id="text-mode" class="text-mode"  style="display: block" >
+                <div id="container-text" class="container-text" style="display: none;">
+                    <!-- <button class="close" id="close">X</button> -->
+                <form id="text-mode" class="text-mode">
                     <h2>TEXTO&nbsp🅰</h2>
                     <div>
                         <label for="up">SUPERIOR</label>
@@ -124,7 +128,7 @@
                 </div>
                 <!-- ***Comienza la caja contenedora del formulario de IMÁGEN*** -->
                 <div id="container-image" class="container-image">
-                    <form id="image-mode" class="image-mode" hidden>  
+                    <form id="image-mode" class="image-mode">  
                         <h2>IMAGEN&nbsp📷</h2>
                         <div class="photo">
                            <!--  **Ingreso de la url de la imágen elegida por el usuario** -->
@@ -135,7 +139,7 @@
                         <!-- **Color de fondo de la imágen y selector funcional** -->
                         <div class="behind">
                             <label for="fondo">FONDO</label>
-                            <input type="color" id="fondo" value="#FFFFFF">
+                            <input type="color" id="fondo-dos" value="#FFFFFF">
                             <span>#FFFFFF</span>
                             <select name="mezcla" id="mezcla" class="mix">
                                 <option value="ninguno">Ninguno</option>
@@ -146,27 +150,27 @@
                                 <option value="multiplicar">Multiplicar</option>
                             </select>
                         </div>
-                        <div class="filtros">
+                        <div class="filtros" id="image-filter">
                             <h3>FILTROS</h3>
                             <div class="filter">
                             <label for="brightness">BRILLO</label>
-                            <input type="range" id="brightness" min="0" max="1" step="0.1" value="1">
+                            <input type="range" id="brillo" min="0" max="1" step="0.1" value="1">
                             </div>
                             <div class="filter">
                                 <label for="opacity">OPACIDAD</label>
-                                <input type="range" id="opacity" min="0" max="1" step="0.1" value="1">
+                                <input type="range" id="opacidad" min="0" max="1" step="0.1" value="1">
                             </div>
                             <div class="filter">
                                 <label for="contrast">CONTRASTE</label>
-                                <input type="range" id="contrast" min="100%" max="1000%" step="1%" value="100%">
+                                <input type="range" id="contraste" min="100%" max="1000%" step="1%" value="100%">
                             </div>
                             <div class="filter">
                                 <label for="blur">DESENFOQUE</label>
-                                <input type="range" id="blur" min="0px" max="10px" step="0.1px" value="0px">
+                                <input type="range" id="desenfoque" min="0px" max="10px" step="0.1px" value="0px">
                             </div>
                             <div class="filter">
                                 <label for="grayscale">ESCALA DE GRISES</label>
-                                <input type="range" id="grayscale" min="0%" max="100%" step="1%" value="0%">
+                                <input type="range" id="grises" min="0%" max="100%" step="1%" value="0%">
                             </div>
                             <div class="filter">
                                 <label for="sepia">SEPIA</label>
@@ -174,20 +178,20 @@
                             </div>
                             <div class="filter">
                                 <label for="hue-rotation">HUE</label>
-                                <input type="range" id="hue-rotation" min="0deg" max="359deg" step="1deg" value="0deg">
+                                <input type="range" id="hue" min="0deg" max="359deg" step="1deg" value="0deg">
                             </div>
                             <div class="filter">
                                 <label for="saturation">SATURACION</label>
-                                <input type="range" id="saturation" min="100%" max="1000%" step="10%" value="100%">
+                                <input type="range" id="saturado" min="100%" max="1000%" step="10%" value="100%">
                             </div>
                             <div class="filter">
                                 <label for="invert">NEGATIVO</label>
-                                <input type="range" id="invert" min="0" max="1" step="0.1" value="1">
+                                <input type="range" id="negativo" min="0" max="1" step="0.1" value="1">
                             </div>
                             
             
                         </div>
-                        <button class="button-reload" id="reload-button">Reestablecer filtros</button>
+                        <button type="button" class="button-reload" id="reload-button">Reestablecer filtros</button>
                         
 
                     </form>
