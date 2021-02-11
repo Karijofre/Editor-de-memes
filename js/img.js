@@ -26,6 +26,8 @@ const imageFilter = document.getElementById("image-filter");
 
 const reloadButton = document.getElementById("reload-button");
 
+const descarga = document.getElementById("descarga");
+
 
 
 
@@ -89,5 +91,21 @@ reloadButton.addEventListener("click", ()=>{
   negativo.value = "1"
   filtro()
 });
+
+
+//Botón de descarga
+
+descarga.addEventListener("click", ()=>{
+  descargarImagen()
+})
+
+const descargarImagen = () =>{
+  domtoimage.toBlob(meme)
+    .then(function (blob){
+      saveAs(blob, "my-node.png");
+    });
+}
+
+
 
 
