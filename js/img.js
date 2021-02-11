@@ -28,6 +28,13 @@ const reloadButton = document.getElementById("reload-button");
 
 const descarga = document.getElementById("descarga");
 
+const front = document.getElementById("front");
+
+
+
+
+
+
 
 
 
@@ -112,6 +119,29 @@ descarga.addEventListener("click", ()=>{
     window.saveAs(blob, "my-meme.png");
   });
 });
+
+
+
+
+//Botón Modo Oscuro
+
+darkPress.addEventListener("click", ()=>{
+  if (darkPress.checked) {
+  front.style.backgroundColor = "black"
+  containerImage.style.backgroundColor = "black"
+  containerImage.style.color = "white"
+  containerText.style.backgroundColor = "black"
+  containerText.style.color = "white"
+
+  }
+  else{
+  front.style.backgroundColor = "var(--azulOscuro)"
+  containerImage.style.backgroundColor = "var(--azulOscuro)"
+  containerImage.style.backgroundColor = "linear-gradient(blue, cyan)"
+  containerText.style.backgroundColor = "var(--azulOscuro)"
+  containerText.style.backgroundColor = "linear-gradient(blue, cyan)"
+  }
+})
 
 
 

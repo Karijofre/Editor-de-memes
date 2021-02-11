@@ -8,12 +8,12 @@
     <link rel="stylesheet" href="./css/image.css">
     <title>Editor de memes.</title>
 </head>
-<body>
+<body id="body">
     <!--**** Presentación del editor*** -->
     <header>
         <h1 class="title-memes">Generador de Memes</h1>
     </header>
-        <nav>
+        <nav id="front">
            <!-- *** Botones para la conección con el formulario.*** -->
             <ul>
                 <li><button id="image-press" class="doing">📷Imágen</button></li>
@@ -153,23 +153,23 @@
                         <div class="filtros" id="image-filter">
                             <h3>FILTROS</h3>
                             <div class="filter">
-                            <label for="brightness">BRILLO</label>
+                            <label for="brillo">BRILLO</label>
                             <input type="range" id="brillo" min="0" max="1" step="0.1" value="1">
                             </div>
                             <div class="filter">
-                                <label for="opacity">OPACIDAD</label>
+                                <label for="opacidad">OPACIDAD</label>
                                 <input type="range" id="opacidad" min="0" max="1" step="0.1" value="1">
                             </div>
                             <div class="filter">
-                                <label for="contrast">CONTRASTE</label>
+                                <label for="contraste">CONTRASTE</label>
                                 <input type="range" id="contraste" min="100%" max="1000%" step="1%" value="100%">
                             </div>
                             <div class="filter">
-                                <label for="blur">DESENFOQUE</label>
+                                <label for="desenfoque">DESENFOQUE</label>
                                 <input type="range" id="desenfoque" min="0px" max="10px" step="0.1px" value="0px">
                             </div>
                             <div class="filter">
-                                <label for="grayscale">ESCALA DE GRISES</label>
+                                <label for="grises">ESCALA DE GRISES</label>
                                 <input type="range" id="grises" min="0%" max="100%" step="1%" value="0%">
                             </div>
                             <div class="filter">
@@ -177,15 +177,15 @@
                                 <input type="range" id="sepia" min="0%" max="100%" step="1%" value="0%">
                             </div>
                             <div class="filter">
-                                <label for="hue-rotation">HUE</label>
+                                <label for="hue">HUE</label>
                                 <input type="range" id="hue" min="0deg" max="359deg" step="1deg" value="0deg">
                             </div>
                             <div class="filter">
-                                <label for="saturation">SATURACION</label>
+                                <label for="saturado">SATURACION</label>
                                 <input type="range" id="saturado" min="100%" max="1000%" step="10%" value="100%">
                             </div>
                             <div class="filter">
-                                <label for="invert">NEGATIVO</label>
+                                <label for="negativo">NEGATIVO</label>
                                 <input type="range" id="negativo" min="0" max="1" step="0.1" value="1">
                             </div>
                             
