@@ -60,6 +60,7 @@ bottomText.addEventListener("keyup",()=>{
 })
 
 
+
 topCheck.addEventListener("click",()=>{
     console.log(topCheck.checked);
     if(topCheck.checked){
@@ -85,15 +86,17 @@ downCheck.addEventListener("click",()=>{
 })
 //Probando las pestañas del menú Texto e Imágen: NO FUNCIONA.
 
-imagePress.addEventListener("click", ()=>{
+ imagePress.addEventListener("click", (e)=>{
+    e.preventDefault();
     containerText.style.display ="none";
     containerImage.style.display ="block";
 }) 
 
-textPress.addEventListener("click", ()=>{
+textPress.addEventListener("click", (e)=>{
+    e.preventDefault();
     containerImage.style.display ="none";
     containerText.style.display ="block";
-})  
+})   
 
 
 //No funciona:
@@ -119,7 +122,7 @@ No funciona:  :( */
 })  */
 
 
-textPress.addEventListener('click', (e) =>{
+/* textPress.addEventListener('click', (e) =>{
     e.preventDefault();
     containerImage.style.visibility = 'hidden';
     containerText.style.visibility = 'visible';
@@ -129,7 +132,7 @@ imagePress.addEventListener('click', (e) =>{
     containerText.style.visibility = 'hidden';
     containerImage.style.display = 'visible';
 })
-
+ */
 //Eventos para cambiar la fuente de letra de cada opción:
 
 letter.addEventListener("change", ()=>{

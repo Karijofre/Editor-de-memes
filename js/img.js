@@ -70,8 +70,7 @@ fondoDos.addEventListener('input', (e) =>{
 // Filtros de imágen.
 
  const filtro = ()=>{
- meme.style.filter = `brightness(${brillo.value}) opacity(${opacidad.value}) contrast(${contraste.value}%) blur(${desenfoque.value}px) grayscale(${grises.value}%) sepia(${sepia.value}%) hue-rotate(${hue}deg) saturate(${saturado.value}%) invert(${negativo.value})`;
-};
+ meme.style.filter = `brightness(${brillo.value}) opacity(${opacidad.value}) contrast(${contraste.value}%) blur(${desenfoque.value}px) grayscale(${grises.value}%) sepia(${sepia.value}%) hue-rotate(${hue}deg) saturate(${saturado.value}%) invert(${negativo.value})`;};
 
 brillo.addEventListener("change", filtro);
 opacidad.addEventListener("change", filtro);
