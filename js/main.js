@@ -9,7 +9,6 @@
 //HTML-DOM.Elementos que disparan eventos.
 
 const topText = document.getElementById("top-text");
-//const bottom = document.getElementById("bottom");
 const up = document.getElementById("up");
 const topCheck = document.getElementById("top-check");
 const bottomText = document.getElementById("bottom-text");
@@ -31,7 +30,7 @@ const leftButtom = document.getElementById("left-buttom");
 const centerBottom = document.getElementById("center-bottom");
 const rightBottom = document.getElementById("right-bottom");
 
-const darkPress = document.getElementById("dark-press");
+
 
 const color = document.getElementById("color");
 const fondo = document.getElementById("fondo");
@@ -70,10 +69,6 @@ topCheck.addEventListener("click",()=>{
     }
 });
 
-/* 
-bottomText.addEventListener("keyup",()=>{
-    bottom.innerHTML = bottomText.value;
-}) */
 
 
 downCheck.addEventListener("click",()=>{
@@ -99,40 +94,7 @@ textPress.addEventListener("click", (e)=>{
 })   
 
 
-//No funciona:
-/*  imagePress.addEventListener("click",()=>{
-    containerImage.style.display = "flex";
-    containerText.style.display = "none";
-})
 
-textPress.addEventListener("click",()=>{
-    containerText.style.display = "flex";
-    containerImage.style.display = "none";
-})  */
-
-
-/* 
-No funciona:  :( */
-/*  textPress.addEventListener("click",(e)=>{
-    if(e.textPress){
-        containerImage.classList.add("ocultar");
-    }else{
-        containerImage.classList.remove("ocultar");
-    }
-})  */
-
-
-/* textPress.addEventListener('click', (e) =>{
-    e.preventDefault();
-    containerImage.style.visibility = 'hidden';
-    containerText.style.visibility = 'visible';
-})
-imagePress.addEventListener('click', (e) =>{
-    e.preventDefault();
-    containerText.style.visibility = 'hidden';
-    containerImage.style.display = 'visible';
-})
- */
 //Eventos para cambiar la fuente de letra de cada opción:
 
 letter.addEventListener("change", ()=>{

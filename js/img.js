@@ -29,17 +29,7 @@ const reloadButton = document.getElementById("reload-button");
 const descarga = document.getElementById("descarga");
 
 const front = document.getElementById("front");
-
-
-
-
-
-
-
-
-
-
-
+const listBottom = document.getElementById("list-bottom");
 
 
 
@@ -55,6 +45,7 @@ linkeado.addEventListener('keyup', (e)=>{
   const valueUrl = linkeado.value;
   meme.style.backgroundImage = `url("${valueUrl}")`;
   meme.style.backgroundPosition = 'center';
+  meme.style.backgroundSize = "cover";
 });
 
 //Color y Fondo de la imágen del meme 
@@ -101,17 +92,6 @@ reloadButton.addEventListener("click", ()=>{
 
 //Botón de descarga
 
-/* descarga.addEventListener("click", ()=>{
-  descargarImagen()
-})
-
-const descargarImagen = () =>{
-  domtoimage.toBlob(meme)
-    .then(function (blob){
-      saveAs(blob, "my-meme.png");
-    });
-} */
-
 descarga.addEventListener("click", ()=>{
   domtoimage.toBlob(meme)
   .then(function (blob) {
@@ -124,23 +104,27 @@ descarga.addEventListener("click", ()=>{
 
 //Botón Modo Oscuro
 
-darkPress.addEventListener("click", ()=>{
-  if (darkPress.checked) {
-  front.style.backgroundColor = "black"
-  containerImage.style.backgroundColor = "black"
-  containerImage.style.color = "white"
-  containerText.style.backgroundColor = "black"
-  containerText.style.color = "white"
 
+const darkPress = document.querySelector("#darkPress");
+const body = document.querySelector("body");
+
+darkPress.addEventListener("click", () =>{ 
+  body.classList.toggle("darkmode");  
+});
+
+function load(){
+  const darkmode = localStorage.getItem("darkmode");
+  if (!darkmode) {
+    store("false");
+  }else if(darkmode == "true"){
+    body.classList.add("darkmode");
   }
-  else{
-  front.style.backgroundColor = "var(--azulOscuro)"
-  containerImage.style.backgroundColor = "var(--azulOscuro)"
-  containerImage.style.backgroundColor = "linear-gradient(blue, cyan)"
-  containerText.style.backgroundColor = "var(--azulOscuro)"
-  containerText.style.backgroundColor = "linear-gradient(blue, cyan)"
-  }
-})
+}
+
+function store(){
+  localStorage.setItem("darkmode",value);
+}
+
 
 
 
