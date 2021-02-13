@@ -15,7 +15,7 @@
     </header>
         <nav id="front">
            <!-- *** Botones para la conección con el formulario.*** -->
-            <ul id="list-bottom">
+            <ul id="list-bottom" class="list-bottom">
                 <li><button id="image-press" class="doing">📷Imágen</button></li>
 
                 <li><button id="text-press" class="doing">🅰Texto</button></li>
@@ -43,7 +43,7 @@
                     <h2>TEXTO&nbsp🅰</h2>
                     <div>
                         <label for="up">SUPERIOR</label>
-                        <input type="text" id="up" value="TOP TEXT">
+                        <input type="text" id="up" value="TOP TEXT" class="input-top-text">
                     </div>
                     <div>
                         <input type="checkbox" name="" id="top-check">
@@ -52,7 +52,7 @@
                     </div>
                     <div>
                         <label for="bottom-text">INFERIOR</label>
-                        <input type="text" id="bottom-text" value="BOTTOM TEXT">
+                        <input type="text" id="bottom-text" value="BOTTOM TEXT" class="input-bottom-text">
                     </div>
                     <div>
                         <input type="checkbox" name="" id="down-check">
@@ -76,7 +76,7 @@
                         
                     </div>
                     <div class="aligned">
-                        <input id="size" type="number" value="40">
+                        <input id="size" type="number" value="40" class="input">
                         <button id="left-buttom" class="left"><i class="fas fa-align-left"></i></button>
                         <button id="center-bottom" class="center"><i class="fas fa-align-center"></i></button>
                         <button id="right-bottom" class="right"><i class="fas fa-align-right"></i></button>
@@ -155,39 +155,39 @@
                             <h3>FILTROS</h3>
                             <div class="filter">
                             <label for="brillo">BRILLO</label>
-                            <input type="range" id="brillo" min="0" max="1" step="0.1" value="1">
+                            <input class="brillo" type="range" id="brillo" min="0" max="1" step="0.1" value="1">
                             </div>
                             <div class="filter">
                                 <label for="opacidad">OPACIDAD</label>
-                                <input type="range" id="opacidad" min="0" max="1" step="0.1" value="1">
+                                <input class="opacidad" type="range" id="opacidad" min="0" max="1" step="0.1" value="1">
                             </div>
                             <div class="filter">
                                 <label for="contraste">CONTRASTE</label>
-                                <input type="range" id="contraste" min="100%" max="1000%" step="1%" value="100%">
+                                <input class="contraste" type="range" id="contraste" min="100%" max="1000%" step="1%" value="100%">
                             </div>
                             <div class="filter">
                                 <label for="desenfoque">DESENFOQUE</label>
-                                <input type="range" id="desenfoque" min="0px" max="10px" step="0.1px" value="0px">
+                                <input class="desenfoque" type="range" id="desenfoque" min="0px" max="10px" step="0.1px" value="0px">
                             </div>
                             <div class="filter">
                                 <label for="grises">ESCALA DE GRISES</label>
-                                <input type="range" id="grises" min="0%" max="100%" step="1%" value="0%">
+                                <input class="grises" type="range" id="grises" min="0%" max="100%" step="1%" value="0%">
                             </div>
                             <div class="filter">
                                 <label for="sepia">SEPIA</label>
-                                <input type="range" id="sepia" min="0%" max="100%" step="1%" value="0%">
+                                <input class="sepia" type="range" id="sepia" min="0%" max="100%" step="1%" value="0%">
                             </div>
                             <div class="filter">
                                 <label for="hue">HUE</label>
-                                <input type="range" id="hue" min="0deg" max="359deg" step="1deg" value="0deg">
+                                <input class="hue" type="range" id="hue" min="0deg" max="359deg" step="1deg" value="0deg">
                             </div>
                             <div class="filter">
                                 <label for="saturado">SATURACION</label>
-                                <input type="range" id="saturado" min="100%" max="1000%" step="10%" value="100%">
+                                <input class="saturado" type="range" id="saturado" min="100%" max="1000%" step="10%" value="100%">
                             </div>
                             <div class="filter">
                                 <label for="negativo">NEGATIVO</label>
-                                <input type="range" id="negativo" min="0" max="1" step="0.1" value="1">
+                                <input class="negativo" type="range" id="negativo" min="0" max="1" step="0.1" value="1">
                             </div>
                             
             

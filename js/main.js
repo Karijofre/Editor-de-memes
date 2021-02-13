@@ -79,7 +79,7 @@ downCheck.addEventListener("click",()=>{
         bottomEnd.style.display ="block";
     }
 })
-//Probando las pestañas del menú Texto e Imágen: NO FUNCIONA.
+//Pestañas del menú Texto e Imágen.
 
  imagePress.addEventListener("click", (e)=>{
     e.preventDefault();

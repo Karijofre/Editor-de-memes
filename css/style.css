@@ -38,6 +38,13 @@ nav, ul, li{
     background-color: var(--azulOscuro);
     background-image: linear-gradient(blue, cyan);
 }
+
+@media(max-width: 1300px){
+    nav ul li{
+         margin: 10px 0px 20px 95px;
+    }
+}
+
 button{
     padding:0.25rem;
     border-radius: 5px;
@@ -54,10 +61,29 @@ button{
     color: white;
 }
 
+@media(max-width: 1150px){
+    .list-bottom{
+        margin: initial;
+    }
+}
+
+@media(max-width: 700px){
+    .list-bottom{
+        margin: 1px 1px 1px -86px;
+    }
+}
+
+
  .doing{
     width: 6.5rem; 
     height: 2.5rem; 
 } 
+
+@media(max-width: 950px){
+    .doing{
+        margin: 0px 0px 0px -50px;
+    }
+}
 
 
 /* Probando el close X */
@@ -91,11 +117,37 @@ main{
     font-weight: bold;
     margin-left: 1.25rem;
 }
+
+@media(max-width: 700px){
+    .meme{
+        width: 60%;
+    }
+}
+
 .top-text, .bottom{
     height: auto;
     width: 100%;
     padding: 5%;
 }
+
+@media(max-width: 700px){
+    .input-top-text{
+        width: 155px;
+    }
+}
+
+@media(max-width: 700px){
+    .input-bottom-text{
+        width: 155px;
+    }
+}
+
+@media(max-width: 700px){
+    .input{
+        width: 50%;
+    }
+}
+
 .image-center{
     height: auto;
     width: 100%;
@@ -118,6 +170,44 @@ main{
     /* margin-top: 7.1875rem;  */
 }
 
+@media(max-width: 700px){
+    .effects{
+        width: 25%;
+    }
+}
+
+@media(max-width: 1150px){
+    .image-mode{
+        font-size: 11px;
+    }
+}
+
+@media(max-width: 1150px){
+    .text-mode{
+        font-size: 12px;
+        font-weight: bold;
+    }
+}
+
+@media(max-width: 950px){
+    .image-mode{
+        font-size: 11px;
+    }
+}
+
+@media(max-width: 700px){
+    .text-mode{
+        font-size: 11px;
+    }
+}
+
+@media(max-width: 700px){
+    .image{
+        width: 155px;
+    }
+}
+
+
 .close{
     display: flex;
     position: fixed;
@@ -132,12 +222,24 @@ main{
     color: white;
 }
 
+@media(max-width: 1550px){
+    .close{
+        display: none;
+    }
+}
+
 .dowland{
     display: flex;
     flex-direction: column;
     margin-left:-25rem;
     margin-top: 65%;
     padding-bottom: 13%;
+}
+
+@media(max-width: 1550px){
+    .dowland{
+        margin-left: -30rem;
+    }
 }
 .get-it{
     padding:0.25rem;
@@ -147,6 +249,43 @@ main{
     color: white;
     height: 30%;
 }
+
+@media(max-width: 1400px){
+    .get-it{
+        margin-left: 3.5rem;
+    }
+}
+
+@media(max-width: 1300px){
+    .get-it{
+        margin-left: 5.5rem;
+    }
+}
+
+@media(max-width: 1150px){
+    .get-it{
+        margin-left: 8.5rem;
+    }
+}
+
+@media(max-width: 950px){
+    .get-it{
+        margin-left: 12rem;
+    }
+}
+
+@media(max-width: 700px){
+    .get-it{
+        margin-top: 130px;
+    }
+}
+
+@media(max-height: 740px){
+    .get-it{
+        margin-left: 9rem;
+    }
+}
+
 .get-it :hover{
     background-color: var(--azulClaro);
 }
@@ -156,6 +295,20 @@ main{
     top: 0;
     right: 0;
 } 
+
+@media(max-width: 950px){
+    .container-image{
+        width: -webkit-fill-available;
+    }
+}
+
+@media(max-width: 700px){
+    .container-image{
+        width: -webkit-fill-available;
+    }
+}
+
+
 /* Estilos del formulario */
 .left, .center, .right{
     width: 2.5rem;
@@ -164,19 +317,46 @@ main{
     display: flex;
     justify-content: space-between;
 }
+
+@media(max-width: 700px){
+    .aligned{
+        width: min-content;
+    }
+}
+
 .colours{
     display: flex;
 }
 .outline{
     display: flex;
 }
+
+@media(max-width: 700px){
+    .outline{
+        width: 30%;
+    }
+}
+
 .space{
     display: flex;
     width: 100%;
 }
+
+@media(max-width: 700px){
+    .space{
+        width: 155px;
+    }
+}
+
 .inter{
     display: flex;
     width: 100%;
+}
+
+@media(max-width: 700px){
+    .inter{
+        width: 155px;
+    }
 }
 
 
@@ -218,6 +398,12 @@ main{
     font-family: cursive;
 }
 
+@media(max-width: 1150px){
+    .input{
+        width: 50%;
+    }
+}
+
 /* Modo oscuro */
 body.darkmode{
     background-color: rgb(32, 32, 44);
@@ -238,3 +424,7 @@ body.darkmode{
     background-color: white;
     color: black;
 }
+
+
+
+
