@@ -4,7 +4,7 @@
 
 ***
 
-## Para ver cómo quedó el proyecto, puedes dar click al siguiente [enlace](https://karijofre.github.io/Editor-de-memes/)
+## Para ver cómo quedó el proyecto, puedes dar click al siguiente [enlace](https://karijofre.github.io/Editor-de-memes/) o puedes hacerlo desde [acá](https://vigorous-mcnulty-98ca20.netlify.app/)
 <br>
 
 ***
