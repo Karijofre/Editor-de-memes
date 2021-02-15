@@ -163,7 +163,7 @@ closeImg.addEventListener("click", () =>{
   effects.style.display ="none";
 }) */
 
-
+ 
 closeText.addEventListener("click", (e)=>{
   if (e.target) {
     effects.style.display =  "none";
@@ -178,4 +178,9 @@ closeImg.addEventListener("click", (e)=>{
   }else{
     front.style.display = "flex"
   }
-})
+}) 
+
+
+/* const design = () => {
+  (window.screen.width <= 700) ? aside.classList.toggle("design") : aside.classList.remove("design");
+} */

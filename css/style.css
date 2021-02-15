@@ -45,6 +45,11 @@ header{
     }
 }
 
+@media(max-width: 425px) and (min-height: 700px){
+    .meme{
+        width: 100%;
+    }
+}
 
 nav, ul, li{
     display: flex;
@@ -259,7 +264,12 @@ main{
     }
 }
 
-
+@media(max-width: 425px) and (min-height: 700px){
+    .effects{
+        height: 80vh;
+        width: 35%;
+    }
+}
 
 @media(max-width: 1150px){
     .image-mode{
@@ -319,6 +329,12 @@ main{
         display: block;
     }
 }
+/* 
+@media(min-width: 480px){
+    .close{
+        display: none;
+    }
+} */
 
 .dowland{
     display: flex;
@@ -381,6 +397,13 @@ main{
 @media(max-width: 360px) and (min-height: 640px){
     .get-it{
         margin-top: 250px;
+    }
+}
+
+@media(max-width: 425px) and (min-height: 700px){
+    .get-it{
+        margin-left: 13.5rem;
+        margin-top: inherit;
     }
 }
 
