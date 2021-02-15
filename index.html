@@ -6,11 +6,12 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/image.css">
+    <link rel="icon" href="./gato-icon.jpg" type="image/png">
     <title>Editor de memes.</title>
 </head>
 <body>
     <!--**** Presentación del editor*** -->
-    <header>
+    <header class="all">
         <h1 class="title-memes">Generador de Memes</h1>
     </header>
         <nav id="front">
@@ -38,7 +39,7 @@
             <aside id="effects" class="effects">
                <!--  ***Comienza la caja contenedora del formulario de TEXTO*** -->
                 <div id="container-text" class="container-text">
-                    <button class="close" id="close" aria-label="Cerrar">X</button>  
+                    <button class="close" id="close-text" aria-label="Cerrar">❌</button>  
                 <form id="text-mode" class="text-mode">
                     <h2>TEXTO&nbsp🅰</h2>
                     <div>
@@ -128,7 +129,7 @@
                 </div>
                 <!-- ***Comienza la caja contenedora del formulario de IMÁGEN*** -->
                 <div id="container-image" class="container-image" style="display: none;" >
-                    <button class="close" id="close" aria-label="Cerrar">X</button> 
+                    <button class="close" id="close-img" aria-label="Cerrar">❌</button> 
                     <form id="image-mode" class="image-mode">  
                         <h2>IMAGEN&nbsp📷</h2>
                         <div class="photo">

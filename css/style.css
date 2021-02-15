@@ -26,9 +26,26 @@ header{
     background-image: linear-gradient(blue, cyan);
 }
 
+
+ @media(max-width: 360px) and (min-height: 640px){
+    .all{
+        display: contents;
+    }
+}
+
 .title-memes{
     padding-right: 17%;
 }
+
+@media(max-width: 360px) and (min-height: 640px){
+    .title-memes{
+        font-size: 32px;
+        display: flex;
+        justify-content: center;
+    }
+}
+
+
 nav, ul, li{
     display: flex;
     flex-direction:row;
@@ -73,6 +90,19 @@ button{
     }
 }
 
+@media(max-width: 360px) and (min-height: 640px){
+    .list-bottom{
+        margin: 0px 0px 0px -200px;
+        font-size: 20px;
+    }
+}
+
+@media(max-width: 360px) and (min-height: 640px){
+    .list-bottom{
+        margin: 0px 0px 0px -45px;
+        display: inline-table;
+    }
+}
 
  .doing{
     width: 6.5rem; 
@@ -85,6 +115,11 @@ button{
     }
 }
 
+@media(max-width: 360px) and (min-height: 640px){
+    .doing{
+        width: 75px;
+    }
+}
 
 /* Probando el close X */
 /*  .close{
@@ -108,6 +143,12 @@ main{
     background-color: black;
     background-image: linear-gradient(black, gray);
 }
+
+@media(max-width: 360px) and (min-height: 640px){
+    main{
+        width: 100%;
+    }
+}
 .meme{
     height: auto;
     width: 40%;
@@ -121,6 +162,19 @@ main{
 @media(max-width: 700px){
     .meme{
         width: 60%;
+    }
+}
+
+@media(max-width: 360px) and (min-height: 640px){
+    .meme{
+        width: 90%;
+        margin-right: 15%;
+    }
+}
+
+@media(max-width: 360px) and (min-height: 640px){
+    .meme{
+        margin-right: auto;
     }
 }
 
@@ -148,15 +202,34 @@ main{
     }
 }
 
+@media(max-width: 360px) and (min-height: 640px){
+    .top-text{
+        font-size: 30px;
+    }
+}
+
 .image-center{
     height: auto;
     width: 100%;
     padding: 30%;
     background-color: black;
 }
+
+@media(max-width: 360px) and (min-height: 640px){
+    .image-center{
+        width: 100%;
+    }
+}
+
+@media(max-width: 360px) and (min-height: 640px){
+    .bottom{
+        font-size: 30px;
+    }
+}
+
 .effects{
     width: 20%;
-    height: 128vh;
+    height: 138vh;
     background-color: chocolate;
     display: flex;
     flex-direction: column;
@@ -175,6 +248,18 @@ main{
         width: 25%;
     }
 }
+
+@media(max-width: 360px) and (min-height: 640px){
+    .effects{
+        display: block;
+        width: inherit;
+        height: 177vh;
+        margin-left: auto;
+        padding: 20%;
+    }
+}
+
+
 
 @media(max-width: 1150px){
     .image-mode{
@@ -211,20 +296,27 @@ main{
 .close{
     display: flex;
     position: fixed;
-    top: 90px;
+    top: 43px;
     right: 2px;
     cursor: pointer;
-    border: black;
-    border-radius: 10px; 
-    width: 1.25rem;  
+    /* border: black; */
+    border-radius: 17px;
+    width: 2.5rem;  
     margin-left: 90%;
-    background-color: var(--azulClaro);
-    color: white;
+    /* background-color: var(--azulOscuro); */
+/*     color: white; */
 }
 
 @media(max-width: 1550px){
     .close{
         display: none;
+    }
+}
+
+
+@media(max-width: 360px) and (min-height: 640px){
+    .close{
+        display: block;
     }
 }
 
@@ -286,6 +378,14 @@ main{
     }
 }
 
+@media(max-width: 360px) and (min-height: 640px){
+    .get-it{
+        margin-top: 250px;
+    }
+}
+
+
+
 .get-it :hover{
     background-color: var(--azulClaro);
 }
@@ -307,7 +407,19 @@ main{
         width: -webkit-fill-available;
     }
 }
+/* 
+@media(max-width: 360px) and (min-height: 640px){
+    .container-image{
+        display: block;
+    }
+} */
 
+/* @media(max-width: 360px) and (min-height: 640px){
+    .container-text{
+        display: block;
+    }
+}
+ */
 
 /* Estilos del formulario */
 .left, .center, .right{

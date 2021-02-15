@@ -31,6 +31,11 @@ const descarga = document.getElementById("descarga");
 const front = document.getElementById("front");
 const listBottom = document.getElementById("list-bottom");
 
+const closeText = document.getElementById("close-text");
+const closeImg = document.getElementById("close-img");
+
+const effects = document.getElementById("effects");
+
 
 
 
@@ -60,18 +65,18 @@ fondoDos.addEventListener('input', (e) =>{
 
 // Filtros de imágen.
 
- const filtro = ()=>{
- meme.style.filter = `brightness(${brillo.value}) opacity(${opacidad.value}) contrast(${contraste.value}%) blur(${desenfoque.value}px) grayscale(${grises.value}%) sepia(${sepia.value}%) hue-rotate(${hue}deg) saturate(${saturado.value}%) invert(${negativo.value})`;};
+ const filter = ()=>{
+ meme.style.filter = `brightness(${brillo.value}) opacity(${opacidad.value}) contrast(${contraste.value}%) blur(${desenfoque.value}px) grayscale(${grises.value}%) sepia(${sepia.value}%) hue-rotate(${hue.value}deg) saturate(${saturado.value}%) invert(${negativo.value})`;};
 
-brillo.addEventListener("change", filtro);
-opacidad.addEventListener("change", filtro);
-contraste.addEventListener("change", filtro);
-desenfoque.addEventListener("change", filtro);
-grises.addEventListener("change", filtro);
-sepia.addEventListener("change", filtro);
-hue.addEventListener("change", filtro);
-saturado.addEventListener("change", filtro);
-negativo.addEventListener("change", filtro);
+brillo.addEventListener("change", filter);
+opacidad.addEventListener("change", filter);
+contraste.addEventListener("change", filter);
+desenfoque.addEventListener("change", filter);
+grises.addEventListener("change", filter);
+sepia.addEventListener("change", filter);
+hue.addEventListener("change", filter);
+saturado.addEventListener("change", filter);
+negativo.addEventListener("change", filter);
 
 
 //Reestablecer los filtros
@@ -127,6 +132,50 @@ function store(){
 
 
 
+// Probando Botón close (X) 
+
+/* closeText.addEventListener("click", () =>{
+  containerText.classList.add("hide");
+});
+
+closeImg.addEventListener("click", () =>{
+  containerImage.classList.add("hide");
+});
+ */
+
+/* 
+transparente.addEventListener('click', (e) => {
+  console.log(e.target.checked);
+  if(e.target.checked){
+    topText.style.backgroundColor = 'rgba(0,0,0,.9)';
+    bottomEnd.style.backgroundColor = 'rgba(0,0,0,.9)';  
+  }else{
+      topText.style.backgroundColor = "cyan";
+      bottomEnd.style.backgroundColor = "cyan";
+  }
+}) */
+
+/* closeText.addEventListener("click", () =>{
+  effects.style.display ="none";
+})else
+
+closeImg.addEventListener("click", () =>{
+  effects.style.display ="none";
+}) */
 
 
+closeText.addEventListener("click", (e)=>{
+  if (e.target) {
+    effects.style.display =  "none";
+  }else{
+    front.style.display = "flex"
+  }
+})
 
+closeImg.addEventListener("click", (e)=>{
+  if (e.target) {
+    effects.style.display =  "none";
+  }else{
+    front.style.display = "flex"
+  }
+})
