@@ -164,7 +164,7 @@ closeImg.addEventListener("click", () =>{
 }) */
 
  
-closeText.addEventListener("click", (e)=>{
+ closeText.addEventListener("click", (e)=>{
   if (e.target) {
     effects.style.display =  "none";
   }else{
@@ -181,6 +181,11 @@ closeImg.addEventListener("click", (e)=>{
 }) 
 
 
-/* const design = () => {
-  (window.screen.width <= 700) ? aside.classList.toggle("design") : aside.classList.remove("design");
-} */
+
+  const design = () =>{
+  if (window.screen.width <= 700) {
+    design.classList.add("design")
+  }else{
+    design.classList.remove("design")
+  }
+};

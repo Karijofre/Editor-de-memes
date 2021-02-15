@@ -48,6 +48,20 @@ header{
 @media(max-width: 425px) and (min-height: 700px){
     .meme{
         width: 100%;
+        font-size: xx-large;
+    }
+}
+
+@media(max-width: 320px) and (min-height: 568px){
+    .meme{
+        width: auto;
+        margin-right: 5rem;
+    }
+}
+
+@media(max-width: 375px) and (min-height: 667px){
+    .meme{
+        width: 100%;
     }
 }
 
@@ -225,6 +239,8 @@ main{
         width: 100%;
     }
 }
+ 
+
 
 @media(max-width: 360px) and (min-height: 640px){
     .bottom{
@@ -270,6 +286,40 @@ main{
         width: 35%;
     }
 }
+
+@media(max-width: 411px) and (min-height: 731px){
+    .effects{
+        display: block;
+    }
+}
+
+@media(max-width: 320px) and (min-height: 568px){
+    .effects{
+        height: 80vh;
+        width: 43%;
+    }
+}
+
+@media(max-width: 375px) and (min-height: 667px){
+    .effects{
+        height: 80vh;
+        width: 38%;
+    }
+}
+
+
+  /* Probando funcionalidad para móbiles */ 
+.design{
+    width: 100%;
+    height: 100vh;
+    padding: 30px 20px;
+    display: block;
+    position: absolute;
+    z-index: 3;
+}
+
+
+
 
 @media(max-width: 1150px){
     .image-mode{
@@ -400,10 +450,25 @@ main{
     }
 }
 
+@media(max-width: 320px) and (min-height: 568px){
+    .get-it{
+        margin-top: 20rem;
+        margin-left: 12rem;
+    }
+}
+
 @media(max-width: 425px) and (min-height: 700px){
     .get-it{
         margin-left: 13.5rem;
         margin-top: inherit;
+    }
+}
+
+@media(max-width: 375px) and (min-height: 667px){
+    .get-it{
+        margin-top: inherit;
+        margin-left: 14rem;
+        width: 45%;
     }
 }
 
