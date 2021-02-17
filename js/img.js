@@ -13,6 +13,8 @@ const linkeado = document.getElementById("linkeado");
 
 const fondoDos = document.getElementById("fondo-dos");
 
+const mix = document.getElementById("mix");
+
 const brillo = document.getElementById("brillo");
 const opacidad = document.getElementById("opacidad");
 const contraste = document.getElementById("contraste");
@@ -58,6 +60,8 @@ linkeado.addEventListener('keyup', (e)=>{
 fondoDos.addEventListener('input', (e) =>{
   const backgroundColor = e.target.value;
   meme.style.backgroundColor = backgroundColor;
+  meme.style.backgroundRepeat= "no repeat";
+  meme.style.width = "auto";
 })
 
 

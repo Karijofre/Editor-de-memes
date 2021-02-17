@@ -1,4 +1,4 @@
-#Editor de Memes
+#Editor de Memes 🐱‍👓
 
 ## Este proyecto está realizado para emplear funcionalidades nuevas con JavaScript 
 
@@ -28,4 +28,6 @@
 
 ***
 
-### De Kari Jo con ❤
+Este proyecto es el resultado del esfuerzo que conlleva para mí poder adquirir nuevos conocimientos complejos como lo es js. Emplear nuevas formas de estudio distintas a las tradicionales a las que estaba acostumbrada. Encontrarme con un grupo excepcional entre compañeras, mi profesor [John](https://github.com/Jonhks) y nuestra profesora de apoyo [Laydy](https://github.com/leydyk93), creo firmemente que si no fuera por todos ellos, no podría haber logrado lo conseguido, que aún tiene muchos detalles que mejorar. A pesar de ello, estoy orgullosa de lo que aprendí en estos primeros cuatro meses dentro de el infinito mundo de la programación. 
+
+### De Kari Jo 🤘 con 💖 y mucho 💪
